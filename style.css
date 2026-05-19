@@ -1,0 +1,300 @@
+
+* {
+  font-family: "Montserrat", sans-serif;
+  margin:0;
+  background-color: #232323;
+  color:white;
+  overflow:hidden;
+
+}
+
+.main{
+    display:flex;
+    height:100vh;
+    background-color: black;
+    padding:0.5 rem;
+
+}
+
+.sidebar{
+    background-color: black;
+    width:300px;
+    border-radius:1rem; /*16px*/
+    margin-right:0.35rem;
+}
+
+.main-content{
+    background-color:#232323;
+    width:700px;
+    flex:1;
+    border-radius:1rem; 
+    overflow:auto;
+    padding: 0 1.5rem 0 1.5rem;
+}
+
+.music-player{
+    background-color: black;
+    bottom:0;
+    height:72px;
+    width:100%;
+    position:fixed;
+}
+
+a{
+    text-decoration: none;
+    color:white;
+}
+ 
+.nav{
+    display:flex;
+    border-radius: 1rem;
+    flex-direction:column;
+    justify-content:center;
+    background-color:#121212;
+    padding:0.5rem 0.75rem;
+    height:100px;
+    margin-top: 0.5rem;
+    margin-left: 0.25rem;
+    background-color:#232323;
+
+}
+
+.nav-option{
+    line-height:2.5rem;
+    font-size:1 rem;
+    opacity:0.7;
+    padding:0.5rem 0.75rem;
+}
+ .nav-option:hover{
+    opacity:1;
+}
+
+
+.nav-option i{
+    font-size:1.5rem;
+}
+
+.options{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    background-color: #232323;
+}
+
+.library{
+    margin-top:0.75rem;
+    background-color:#232323;
+    padding:0.5rem 0.75rem;
+}
+
+
+.lib-options img{
+    width:1.25rem;
+    height:1.25rem;
+}
+
+.icons{
+    font-size:1.25rem;
+    opacity:0.7;
+    margin-right:1 rem;
+
+}
+
+.icons i{
+    opacity:0.75;
+}
+
+.icons i:hover{
+    opacity:1;
+
+}
+
+.lib-box{
+    background-color: #232323;
+    border-radius: 1 rem;
+    height:100%;
+}
+
+.boxes{
+    margin:0.75rem 0.5rem 0.75rem 0.5rem;
+    padding:0.75rem 1rem;
+    height:8rem;
+    border-radius: 1rem;
+    background-color:rgb(51, 53, 51);
+}
+
+.box-p1{
+    font-size:1rem;
+    font-weight:600;
+    margin-bottom: 16px;
+    background-color:rgb(51, 53, 51);
+    
+
+}
+
+.box-p2{
+    font-size:0.875rem;
+    opacity:0.7;
+    margin-bottom: 16px;
+    background-color:rgb(51, 53, 51);
+
+}
+
+.badge{
+    background-color: white;
+    color:black;
+    font-weight: bold;
+    border:none;
+    padding:0.25rem 1rem;
+    border-radius:2rem;
+    font-size:0.875rem;
+    cursor:pointer;
+    width:fit-content;
+}
+
+.header{
+    position: sticky;
+  top: 0;
+  z-index: 100;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 10px 20px;
+  background: #232323; 
+}
+
+.headerp1 img{
+    border-radius:50%;
+    background-color: rgba(0, 0, 0, 0.545);
+}
+
+.dark-badge{
+    background-color: black;
+    color:white;
+}
+
+.card {
+  width: 180px;
+  background-color: #333533;
+  border-radius: 10px;
+  padding: 15px;
+  font-family: Arial, sans-serif;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Album Image */
+.card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  display: block;
+}
+
+/* Artist Names */
+.card h2,p {
+  font-size: 13px;
+  background-color: #333533;
+  margin: 0;
+}
+
+.cards{
+    display: flex;
+    gap:1rem;
+        margin-left: 1.5rem;
+
+}
+
+.footer{
+    height:300px;
+    justify-content: center;
+    align-items: center;
+}
+
+.line{
+    height:30%;
+    width:90%;
+    border-top:1px solid white;
+    opacity:0.54;
+}
+
+.music-player{
+    display:flex;
+    background-color: black;
+}
+
+.left-side{
+    width:25%;
+}
+
+.player-content{
+    width:50%;
+    
+} 
+
+.right-side{
+    width:25%;
+}
+
+.player-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;   /* 🔥 stack vertically */
+  align-items: center;
+  justify-content: center;
+}
+
+/* ICONS ROW */
+.player-controls {
+  display: flex;
+  gap: 18px;
+  margin-bottom: 8px;
+}
+
+.player-icon {
+  height: 1.25rem;;   /* 🔥 use height, not font-size */
+  width: auto;
+  opacity: 0.7;
+  cursor: pointer;
+  gap:2rem;
+}
+
+.player-icon:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+/* PLAYER BAR */
+.player-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width:50%;
+}
+
+.progress-bar {
+  width: 70%;
+  background-color: transparent;
+  appearance: none;
+  cursor:pointer;
+
+}
+
+.progress-bar::-webkit-slider-runnable-track {
+  height: 0.2rem;
+  background-color: white;
+  border-radius: 50%;
+  
+}
+
+.progress-bar::-webkit-slider-thumb {
+  appearance: none;
+  width: 1rem;
+  height: 1rem;
+  background-color: #1bd760;
+  border-radius: 50%;
+  margin-top:-6px;
+}
